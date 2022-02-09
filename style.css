@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./philcoin_background.jpg');
+    background-size: contain;
+}
+
+
+
+nav{
+    padding: 3rem;
+}
+
+
+.right {
+    position: absolute;
+    top: 3rem;
+    right: 50px;
+}
+
+#a {
+    padding: 8px 15px;
+    font-weight: 300;
+}
