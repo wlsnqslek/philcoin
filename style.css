@@ -34,6 +34,11 @@ body{
 .nav-ul li {
     padding: 10px 10px;
 }
+
+a {
+    text-decoration: none;
+}
+
 .nav-logo{
     padding: 30px;
     flex-shrink: 2;
@@ -48,6 +53,15 @@ body{
   transition: 0.5s ease;
   z-index: 1;
   background-color: #eee;
+  
+}
+
+.menu ul {
+    margin-top: 50px;
+}
+.menu ul li{
+
+    padding: 10px;
 }
 
 .burger-icon {
@@ -57,7 +71,7 @@ body{
   z-index: 2;
   padding: 8px 0;
   top: auto;
-    right: 30px;
+    right: 50px;
   user-select: none;
   width: auto;
   margin: 0;
@@ -119,6 +133,14 @@ body{
 input, label {
     visibility: hidden;
     display: none;
+}
+
+.burger-ul {
+    list-style: none;
+}
+.burger-ul li a{
+    cursor: pointer;
+    color: gray;
 }
 
 
