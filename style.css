@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 
-body{
+body {
     font-size: 15px;
     width: 100vw;
     height: 100vh;
@@ -18,12 +18,12 @@ body{
     overflow: hidden;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
 }
 
-.nav-ul{
+.nav-ul {
     display: flex;
     list-style: none;
     justify-content: flex-start;
@@ -40,118 +40,129 @@ a {
     text-decoration: none;
 }
 
-.nav-logo{
+.nav-logo {
     padding: 30px;
     flex-shrink: 2;
     display: inline-block;
 }
+
 .menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  max-width: 0;
-  transition:1s ease;
-  z-index: 1;
-  background-color: rgba(0,0,0,0.45);
-  
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-width: 0;
+    transition: 1s ease;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.45);
+
 }
 
 
 .menu ul {
     margin-top: 50px;
 }
-.menu ul li{
+
+.menu ul li {
 
     padding: 10px;
 }
 
 .burger-icon {
-  cursor: pointer;
-  display: inline-block;
-  position: absolute;
-  z-index: 2;
-  padding: 8px 0;
-  top: auto;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    padding: 8px 0;
+    top: auto;
     right: 50px;
-  user-select: none;
-  width: auto;
-  margin: 0;
+    user-select: none;
+    width: auto;
+    margin: 0;
 }
 
 .burger-icon .burger-sticks {
-  background: gray;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 30px;
+    background: gray;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 30px;
 }
 
 .burger-icon .burger-sticks:before,
 .burger-icon .burger-sticks:after {
-  background: gray;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
+    background: gray;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
 }
 
 .burger-icon .burger-sticks:before {
-  top: 10px;
+    top: 10px;
 }
 
 .burger-icon .burger-sticks:after {
-  top: -10px;
+    top: -10px;
 }
 
 .burger-check {
-  display: none;
+    display: none;
 }
 
-.burger-check:checked~.menu {
-  max-width: 200px;
-  display: block;
+.burger-check:checked ~ .menu {
+    max-width: 200px;
+    display: block;
 }
 
-.burger-check:checked~.burger-icon .burger-sticks {
-  background: transparent;
+.burger-check:checked ~ .burger-icon .burger-sticks {
+    background: transparent;
 }
 
-.burger-check:checked~.burger-icon .burger-sticks:before {
-  transform: rotate(-45deg);
+.burger-check:checked ~ .burger-icon .burger-sticks:before {
+    transform: rotate(-45deg);
 }
 
-.burger-check:checked~.burger-icon .burger-sticks:after {
-  transform: rotate(45deg);
+.burger-check:checked ~ .burger-icon .burger-sticks:after {
+    transform: rotate(45deg);
 }
 
-.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
-.burger-check:checked~.burger-icon:not(.steps) .burger-sticks:after {
-  top: 0;
+.burger-check:checked ~ .burger-icon:not(.steps) .burger-sticks:before,
+.burger-check:checked ~ .burger-icon:not(.steps) .burger-sticks:after {
+    top: 0;
 }
 
 
 .burger-ul {
     list-style: none;
 }
-.burger-ul li a{
+
+.burger-ul li a {
     cursor: pointer;
     color: white;
 }
 
+.burger {
+    display: none;
+    visibility: hidden;
+}
 
 @media(max-width: 990px) {
     * {
         font-size: 10px;
     }
-    
+
     .nav-ul {
         visibility: hidden;
         display: none;
     }
-    
+
+    .burger {
+        display: block;
+        visibility: visible;
+    }
 }
