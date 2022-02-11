@@ -8,13 +8,14 @@
 
 body{
     font-size: 15px;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color: black;
     background-image: url('philcoin_background.jpeg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 80% 20%;
+    overflow: hidden;
 }
 
 .navbar{
@@ -45,16 +46,18 @@ a {
     display: inline-block;
 }
 .menu {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
   height: 100%;
   max-width: 0;
-  transition: 0.5s ease;
+  transition:1s ease;
   z-index: 1;
-  background-color: #eee;
+  background-color: rgba(0,0,0,0.45);
   
 }
+
 
 .menu ul {
     margin-top: 50px;
@@ -98,11 +101,11 @@ a {
 }
 
 .burger-icon .burger-sticks:before {
-  top: 5px;
+  top: 10px;
 }
 
 .burger-icon .burger-sticks:after {
-  top: -5px;
+  top: -10px;
 }
 
 .burger-check {
@@ -111,6 +114,7 @@ a {
 
 .burger-check:checked~.menu {
   max-width: 200px;
+  display: block;
 }
 
 .burger-check:checked~.burger-icon .burger-sticks {
@@ -130,17 +134,13 @@ a {
   top: 0;
 }
 
-input, label {
-    visibility: hidden;
-    display: none;
-}
 
 .burger-ul {
     list-style: none;
 }
 .burger-ul li a{
     cursor: pointer;
-    color: gray;
+    color: white;
 }
 
 
@@ -154,8 +154,4 @@ input, label {
         display: none;
     }
     
-    input, label {
-        visibility: visible;
-        
-    }
 }
