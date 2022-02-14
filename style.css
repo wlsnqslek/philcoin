@@ -2,25 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
 }
 
 
 body {
     font-size: 15px;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url('philcoin_background.jpeg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: 80% 20%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .navbar {
     display: flex;
     align-items: center;
+    background-color: hsla(0, 0, 0,0.5);
+    backdrop-filter: blur(10px);
 }
 
 .nav-ul {
@@ -28,8 +25,8 @@ body {
     list-style: none;
     justify-content: flex-start;
     align-items: center;
-    flex-shrink: ;
     margin-left: auto;
+    margin-right: 50px;
 }
 
 .nav-ul li {
@@ -38,9 +35,11 @@ body {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .nav-logo {
+    height: 10rem;
     padding: 30px;
     flex-shrink: 2;
     display: inline-block;
@@ -56,7 +55,6 @@ a {
     transition: 1s ease;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.45);
-
 }
 
 
@@ -139,9 +137,14 @@ a {
 
 .burger-ul {
     list-style: none;
+    padding-top: 4rem;
+    
+    background-color: rgba(0, 0, 0,0.5);
+    backdrop-filter: blur(100px);
 }
 
 .burger-ul li a {
+    font-size: 1.5rem;
     cursor: pointer;
     color: white;
 }
@@ -150,6 +153,67 @@ a {
     display: none;
     visibility: hidden;
 }
+
+.background-img {
+    margin-left: 10%;
+    width: 80%;
+    object-fit: contain;
+}
+
+
+.footer {
+}
+
+.footer p {
+    text-align: center;
+
+}
+
+
+.phil-coin-content {
+    background-color: white;
+    width: 100%;
+    border-bottom: 2px solid lightgray;
+}
+
+.phil-coin-head  h3 {
+    margin: 1rem;
+}
+
+.phil-coin-head span{
+    margin:3rem 1rem 0;
+    display: inline-block;
+    background-color: #ffc940;
+    border-radius: 10px;
+    padding: 1rem;
+    color: black;
+}
+
+.phil-coin-head{
+    margin-bottom: 20rem;
+}
+
+
+.phil-coin-content img {
+    position:absolute;
+    margin:0 1rem;
+    width: 30%;
+    object-fit: contain;
+    display: block;
+}
+
+.phil-coin-content h1{
+    margin-left: 35%;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    width: 50%;
+    display: inline-block;
+    color: black;
+}
+
+
 
 @media(max-width: 990px) {
     * {
@@ -165,4 +229,5 @@ a {
         display: block;
         visibility: visible;
     }
+
 }
