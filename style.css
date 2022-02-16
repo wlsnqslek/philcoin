@@ -270,7 +270,7 @@ a {
 .phil-coin-body {
     scroll-behavior: smooth;
 }
-html:focus-within {
+html {
     scroll-behavior: smooth;
   }
 
