@@ -41,14 +41,14 @@ nav li{
 }
 nav a {
     text-decoration: none;
-    color: white;
+    color: gold;
     font-size: 1.2rem;
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
 }
 nav a:hover {
-    color: #ccc;
+    color: #eee;
 }
 
 .nav-toggle:checked ~ nav {
@@ -140,6 +140,7 @@ nav a:hover {
     nav a{
         opacity: 1;
         position: relative;
+        color: white;
     }
     
     nav a::before {
